@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:fillViewport="true" android:background="#FFFFFF">
+
+    <LinearLayout
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="28dp">
+
+        <TextView android:id="@+id/tvUsuario" android:layout_width="wrap_content" android:layout_height="0dp"
+            android:visibility="gone" />
+
+        <TextView android:id="@+id/tvTitulo" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="40dp" android:text="Nueva" android:textColor="#222222" android:textSize="26sp" />
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="32dp" android:text="Nombre" android:textColor="#FF5A66" android:textSize="12sp" />
+        <EditText android:id="@+id/etNombre" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:hint="Ingresa nombre mascota" android:inputType="textPersonName" android:maxLines="1" />
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="16dp" android:text="Raza" android:textColor="#FF5A66" android:textSize="12sp" />
+        <EditText android:id="@+id/etRaza" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:hint="Ingresa raza" android:inputType="textCapWords" android:maxLines="1" />
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="16dp" android:text="Edad" android:textColor="#FF5A66" android:textSize="12sp" />
+        <EditText android:id="@+id/etEdad" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:hint="Ingresa la edad" android:inputType="number" android:maxLines="1" />
+
+        <Button android:id="@+id/btnGuardar" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="40dp" android:text="Guardar" android:backgroundTint="#FF5A66" android:textColor="#FFFFFF" />
+
+        <Button android:id="@+id/btnEliminar" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="12dp" android:text="Eliminar" android:backgroundTint="#D32F2F" android:textColor="#FFFFFF"
+            android:visibility="gone" />
+
+        <Button android:id="@+id/btnRegresar" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="12dp" android:text="Regresar" android:backgroundTint="#8E9196" android:textColor="#FFFFFF" />
+    </LinearLayout>
+</ScrollView>
